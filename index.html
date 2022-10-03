@@ -1,5 +1,15 @@
 <!-- Pictures are from https://unsplash.com/ -->
 
+<!-- To Do List:
+Update URLs to deplyed applicates [done]
+Put tooltip over the coming soon project
+hover effect over projects
+height of images
+add color to stuff
+try images as backgrounds rather than using the image as the tile.
+Center the work section
+New images? -->
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -23,13 +33,15 @@
             <a href="#contact-me">Contact Me</a>
           </li>
           <li class="navigation">
-            <a href="#Resume">Resume</a>
+            <span data-tooltip="Coming Soon!"
+              ><a href="#Resume">Resume</a></span
+            >
           </li>
         </ul>
       </nav>
     </header>
 
-    <div class="background"></div>
+    <div class="background-banner"></div>
 
     <main>
       <section class="about">
@@ -65,16 +77,68 @@
         <article class="content content-work">
           <div class="work-images">
             <div id="project-1">
-              <img class="img-large" src="./assets/images/marble.jpg" alt="" />
-              <h3 class="img-title">Project 1</h3>
+              <a
+                href="https://github.com/markerpathis/portfolio"
+                target="_blank"
+                ><img class="img-large" src="./assets/images/marble.jpg" alt=""
+              /></a>
+              <div class="img-title">
+                <h3>Portfolio Project (Repo)</h3>
+                <p>October 2022</p>
+              </div>
             </div>
             <div id="project-2">
-              <img class="img-small" src="./assets/images/marble.jpg" alt="" />
-              <h3 class="img-title">Project 2</h3>
+              <a
+                href="https://github.com/markerpathis/semantic-markup"
+                target="_blank"
+                ><img class="img-small" src="./assets/images/marble.jpg" alt=""
+              /></a>
+              <div class="img-title">
+                <h3>Semantic Markup Project (Repo)</h3>
+                <p>September 2022</p>
+              </div>
             </div>
             <div id="project-3">
-              <img class="img-small" src="./assets/images/marble.jpg" alt="" />
-              <h3 class="img-title">Project 3</h3>
+              <a
+                href="https://markerpathis.github.io/landing-page/"
+                target="_blank"
+                ><img class="img-small" src="./assets/images/marble.jpg" alt=""
+              /></a>
+              <div class="img-title">
+                <h3>Landing Page Project</h3>
+                <p>September 2022</p>
+              </div>
+            </div>
+            <div id="project-4">
+              <a
+                href="https://markerpathis.github.io/prework-study-guide/"
+                target="_blank"
+                ><img class="img-small" src="./assets/images/marble.jpg" alt=""
+              /></a>
+              <div class="img-title">
+                <h3>Boot Camp Pre-Work</h3>
+                <p>August 2022</p>
+              </div>
+            </div>
+            <!-- <div class="img-small" id="project-5">
+              <div class="background-project5"></div>
+              <div class="img-title">
+                <h3>More Projects Coming Soon!</h3>
+                <p>TBD</p>
+              </div>
+            </div> -->
+            <div id="project-5">
+              <span data-tooltip="Coming Soon!"
+                ><a href="#" target="_blank"
+                  ><img
+                    class="img-small"
+                    src="./assets/images/marble.jpg"
+                    alt="" /></a
+              ></span>
+              <div class="img-title">
+                <h3>More Projects Coming Soon!</h3>
+                <p>TBD</p>
+              </div>
             </div>
           </div>
         </article>
@@ -92,7 +156,10 @@
             <li class="contact-list">Phone: 425.418.2121</li>
             <li class="contact-list">Email: parkerjmathis@gmail.com</li>
             <li class="contact-list">
-              <a href="#GitHub">GitHub</a>
+              <!-- Setting the target as blank will open a new window or tab. Source: https://www.w3schools.com/tags/att_a_target.asp -->
+              <a href="https://github.com/markerpathis" target="_blank"
+                >GitHub</a
+              >
             </li>
           </ul>
         </div>
