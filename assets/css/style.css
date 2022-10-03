@@ -45,18 +45,6 @@ span[data-tooltip]:hover::after {
   background-position: center;
 }
 
-.background-project5 {
-  height: 90%;
-  width: 100%;
-  background-image: url("../images/jp-choose-your-own.jpg");
-  background-size: cover;
-  background-position: center;
-  border: 4px;
-  border-style: solid;
-  border-color: black;
-  margin: 5px;
-}
-
 main {
   padding-top: 30px;
   display: flex;
@@ -111,15 +99,58 @@ main {
   padding-right: 40px;
 }
 
-.img-large {
-  width: 100%;
-  max-height: 100%;
-}
-.img-small {
-  width: 100%;
-  max-height: 100%;
+.content-work {
+  width: 70%;
 }
 
+.img-large {
+  width: 100%;
+  position: relative;
+}
+
+.img-small {
+  width: 48.5%;
+  position: relative;
+}
+
+.work-background {
+  background-size: cover;
+  background-position: center;
+  border: 4px;
+  border-style: solid;
+  border-color: black;
+  margin: 5px;
+}
+
+#background-project1 {
+  height: 350px;
+  width: 100%;
+  background-image: url("../images/retro-systems.jpg");
+}
+
+#background-project2 {
+  height: 200px;
+  width: 100%;
+  background-image: url("../images/jp-choose-your-own.jpg");
+}
+
+#background-project3 {
+  height: 200px;
+  width: 100%;
+  background-image: url("../images/sketch-plan.jpg");
+}
+
+#background-project4 {
+  height: 200px;
+  width: 100%;
+  background-image: url("../images/top-down-view1.jpg");
+}
+
+#background-project5 {
+  height: 200px;
+  width: 100%;
+  background-image: url("../images/top-down-view2.jpg");
+}
 .work-images {
   display: flex;
   flex-wrap: wrap;
@@ -132,44 +163,15 @@ main {
   margin: 5px;
 }
 
-#project-1 {
-  width: 100%;
-  /* max-height: 250px; */
-  position: relative;
-}
-
-#project-2 {
-  width: 48.5%;
-  position: relative;
-}
-#project-3 {
-  width: 48.5%;
-  position: relative;
-}
-#project-4 {
-  width: 48.5%;
-  position: relative;
-}
-#project-5 {
-  width: 48.5%;
-  position: relative;
-}
-
 .img-title {
   position: absolute;
   top: 33%;
   margin: 5px;
   padding-left: 20px;
-  /* padding-top: 15px; */
-  /* padding-bottom: 15px; */
   background-color: black;
   color: white;
   width: 275px;
   font-size: 80%;
-}
-
-.content-work {
-  width: 70%;
 }
 
 .footer {

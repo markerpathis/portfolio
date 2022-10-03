@@ -1,12 +1,12 @@
 <!-- Pictures are from https://unsplash.com/ -->
 
 <!-- To Do List:
-Update URLs to deplyed applicates [done]
-Put tooltip over the coming soon project
+Update URLs to deplyed applicates [DONE]
+Put tooltip over the coming soon project [NEED TO ADJUST SIZE AND POSITION]
 hover effect over projects
-height of images
+height of images [DONE]
 add color to stuff
-try images as backgrounds rather than using the image as the tile.
+try images as backgrounds rather than using the image as the tile. [DONE]
 Center the work section
 New images? -->
 
@@ -76,58 +76,60 @@ New images? -->
         </aside>
         <article class="content content-work">
           <div class="work-images">
-            <div id="project-1">
+            <div class="img-large" id="project-1">
               <a
                 href="https://github.com/markerpathis/portfolio"
                 target="_blank"
-                ><img class="img-large" src="./assets/images/marble.jpg" alt=""
-              /></a>
+                ><div class="work-background" id="background-project1"></div
+              ></a>
               <div class="img-title">
                 <h3>Portfolio Project (Repo)</h3>
                 <p>October 2022</p>
               </div>
             </div>
-            <div id="project-2">
+            <div class="img-small" id="project-2">
               <a
                 href="https://github.com/markerpathis/semantic-markup"
                 target="_blank"
-                ><img class="img-small" src="./assets/images/marble.jpg" alt=""
-              /></a>
+                ><div class="work-background" id="background-project2"></div
+              ></a>
               <div class="img-title">
                 <h3>Semantic Markup Project (Repo)</h3>
                 <p>September 2022</p>
               </div>
             </div>
-            <div id="project-3">
+            <div class="img-small" id="project-3">
               <a
                 href="https://markerpathis.github.io/landing-page/"
                 target="_blank"
-                ><img class="img-small" src="./assets/images/marble.jpg" alt=""
-              /></a>
+                ><div class="work-background" id="background-project3"></div
+              ></a>
               <div class="img-title">
                 <h3>Landing Page Project</h3>
                 <p>September 2022</p>
               </div>
             </div>
-            <div id="project-4">
+            <div class="img-small" id="project-4">
               <a
                 href="https://markerpathis.github.io/prework-study-guide/"
                 target="_blank"
-                ><img class="img-small" src="./assets/images/marble.jpg" alt=""
-              /></a>
+                ><div class="work-background" id="background-project4"></div
+              ></a>
               <div class="img-title">
                 <h3>Boot Camp Pre-Work</h3>
                 <p>August 2022</p>
               </div>
             </div>
-            <!-- <div class="img-small" id="project-5">
-              <div class="background-project5"></div>
+            <div class="img-small" id="project-5">
+              <span data-tooltip="Coming Soon!"
+                ><div class="work-background" id="background-project5"></div
+              ></span>
               <div class="img-title">
                 <h3>More Projects Coming Soon!</h3>
                 <p>TBD</p>
               </div>
-            </div> -->
-            <div id="project-5">
+            </div>
+            <!-- <div id="project-5">
               <span data-tooltip="Coming Soon!"
                 ><a href="#" target="_blank"
                   ><img
@@ -139,7 +141,7 @@ New images? -->
                 <h3>More Projects Coming Soon!</h3>
                 <p>TBD</p>
               </div>
-            </div>
+            </div> -->
           </div>
         </article>
       </section>
