@@ -2,7 +2,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* HOMEWORK ACTION: Make the header a flexbox... */
 .header h1 {
   display: inline-block;
   padding-left: 30px;
@@ -25,6 +24,7 @@ span[data-tooltip] {
   color: #000;
 }
 
+/* used to add a hover effect to show a coming soon message for the resume and last image in the work section */
 span[data-tooltip]:hover::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -68,6 +68,7 @@ main {
   flex-wrap: wrap;
 }
 
+/* titles class controls the design of the aside elements on the left side of the page */
 .titles {
   flex-basis: 130px;
   flex-grow: 0;
@@ -102,19 +103,18 @@ main {
   padding-bottom: 50px;
 }
 
-/* .img-container {
-  display: flex;
-  justify-content: center;
-} */
-
 .about img {
   border: 4px;
   border-style: solid;
   border-color: black;
 }
 
+/* this width aligns the text in the about me section, with the photos in the work section */
+#about-details {
+  width: 80%;
+}
+
 /* using flex allows you to control where you want the contact details and links to show on the page */
-/* margin and padding of 0 clears out the default styling */
 #contact-list ul {
   margin: 0;
   padding: 0;
@@ -129,7 +129,7 @@ main {
 }
 
 .content-work {
-  width: 70%;
+  width: 80%;
 }
 
 .img-large {
@@ -151,11 +151,13 @@ main {
   margin: 5px;
 }
 
+/* adds a box shadow with a pointer cursor when hovering over the images in the work section */
 .work-background:hover {
   box-shadow: 10px 10px 8px #888888;
   cursor: pointer;
 }
 
+/* images for the work section are saved as backgrounds. This helped me keep more control over setting the heights without squishing the images. */
 #background-project1 {
   height: 300px;
   width: 100%;
@@ -200,7 +202,8 @@ main {
 .img-title {
   position: absolute;
   top: 33%;
-  margin: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
   padding-left: 20px;
   background-color: black;
   color: white;
@@ -208,6 +211,37 @@ main {
   font-size: 80%;
 }
 
+/* aligns the text in the footer */
 .footer {
   text-align: center;
+}
+
+@media screen and (max-width: 860px) {
+  /* removed the float right, so the nav adjusts to the left and removes some padding to be closer to the h1 */
+  .header nav {
+    float: none;
+    padding-top: 0px;
+  }
+  /* reduces the height of the banner background image */
+  .background-banner {
+    height: 250px;
+  }
+  /* reduces the width and font size in the background title */
+  .background-title {
+    width: 50%;
+    font-size: 60%;
+  }
+  /* moves the image titles to the top and reduces the font size. Width is reduced to avoid the title hanging over the edge */
+  .img-title {
+    top: 0;
+    width: 95%;
+    font-size: 60%;
+  }
+}
+
+/* media query sets the small images width to 100% so there is no more than 1 per row */
+@media screen and (max-width: 576px) {
+  .img-small {
+    width: 100%;
+  }
 }

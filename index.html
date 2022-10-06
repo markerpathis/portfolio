@@ -1,15 +1,3 @@
-<!-- Pictures are from https://unsplash.com/ -->
-
-<!-- To Do List:
-Update URLs to deplyed applicates [DONE]
-Put tooltip over the coming soon project [NEED TO ADJUST SIZE AND POSITION]
-hover effect over projects
-height of images [DONE]
-add color to stuff
-try images as backgrounds rather than using the image as the tile. [DONE]
-Center the work section
-New images? -->
-
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -53,7 +41,7 @@ New images? -->
         <aside class="titles" id="title-about">
           <h2>About<br />Me</h2>
         </aside>
-        <article class="content" id="about-details">
+        <div class="content" id="about-details">
           <div class="img-container">
             <img src="./assets/images/parkerImage.png" alt="" height="200px" />
           </div>
@@ -63,21 +51,22 @@ New images? -->
             to complete the program in March 2023. Throughout the boot camp, I
             will be using this portfolio to show links for my projects and
             assignments. This portfolio will be a project itself, and I'm
-            planning to update it as a learn more throughout the boot camp.
+            planning to update it as I learn more throughout the boot camp.
             <br /><br />
             So far in the boot camp we've learned HTML, CSS, and we're just
             getting started on JavaScript! Later on in the boot camp I'll be
-            learning Node, SQL, MongoDB, React, and more. Check back here later to see
-            more!
+            learning Node, SQL, MongoDB, React, and more. Check back here later
+            to see more!
           </p>
-        </article>
+        </div>
       </section>
 
       <section class="work">
         <aside class="titles" id="title-work">
           <h2>Work</h2>
         </aside>
-        <article class="content content-work">
+
+        <div class="content content-work">
           <div class="work-images">
             <div class="img-large" id="project-1">
               <a
@@ -132,21 +121,8 @@ New images? -->
                 <p>TBD</p>
               </div>
             </div>
-            <!-- <div id="project-5">
-              <span data-tooltip="Coming Soon!"
-                ><a href="#" target="_blank"
-                  ><img
-                    class="img-small"
-                    src="./assets/images/marble.jpg"
-                    alt="" /></a
-              ></span>
-              <div class="img-title">
-                <h3>More Projects Coming Soon!</h3>
-                <p>TBD</p>
-              </div>
-            </div> -->
           </div>
-        </article>
+        </div>
       </section>
 
       <section class="contact">
@@ -172,7 +148,7 @@ New images? -->
     </main>
 
     <footer class="footer">
-      <p>Have a good one!</p>
+      <p>Created by Parker Mathis</p>
     </footer>
   </body>
 </html>
